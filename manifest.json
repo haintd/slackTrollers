@@ -20,6 +20,8 @@
     "default_title": "Slack Trollers"
   },
   "permissions": [
-    "storage"
-  ]
+    "storage",
+    "identity"
+  ],
+  "key": "ighoijkmcogfgfgeidhcpeommbcagahc"
 }
