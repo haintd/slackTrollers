@@ -1,13 +1,43 @@
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="popup.css">
-    <title>Slack Trollers</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <title>Slack Trollers</title>
+  <style type="text/css">
+    body {
+      max-width: 103%;
+      width: 103%;
+      overflow-x: hidden;
+      font-size: 13px;
+    }
+
+    #container {
+      margin: 0;
+      width: 300px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 10px;
+    }
+
+    hr {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    hr.popuplinebreak {
+	  width: 100%;
+	  height: 1px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
 <div id="container">
-  <div class="title">
-    <span>Slack Trollers</span>
+  <div>
+    <img src=icon.png alt="Logo" width="25" height="25">
+    <font size="4.5">Slack Trollers</font>
   </div>
   <hr class="popuplinebreak">
   <form id="slackForm" class="form-inline">
