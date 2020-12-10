@@ -5,6 +5,25 @@
     <title>Slack Trollers</title>
 </head>
 <body>
-<script src="popup.js"></script>
+<div id="container">
+  <div class="title">
+    <span>Slack Trollers</span>
+  </div>
+  <hr class="popuplinebreak">
+  <form id="slackForm" class="form-inline">
+    <div class="form-group">
+      <label for="displayNames">Display Names</label>
+      <textarea class="form-control" id="displayNames" rows="3" placeholder="Display Names"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="timeInterval">Time Interval (seconds)</label>
+      <input type="number" class="form-control" id="timeInterval" placeholder="Time Interval (seconds)">
+    </div>
+    <div id="buttonGroup">
+      <button id="save" class="btn btn-primary">Save</button>
+    </div>
+  </form>
+  <script src="popup.js"></script>
+</div>
 </body>
 </html>
