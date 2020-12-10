@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Slack Trollers",
+  "description": "Change your Slack profile name and profile picture automatically.",
+  "version": "0.1",
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.slack.com/*"
+      ],
+      "js": ["popup.js"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png",
+    "default_title": "Slack Trollers"
+  },
+  "permissions": [
+    "storage"
+  ]
+}
